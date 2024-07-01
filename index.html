@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class ="container">
+  <div id="myDIV" class="header">
+    <h2>My To-Do List</h2>
+    <input type="text" id="myInput" placeholder="Create New To-Do...">
+    <span onclick="newElement()" class="addBtn">Add to List</span>
+  </div>
+  
+  
+  <ul id="myList">
+    <li>Finish assignments</li>
+    <li>Pay bills</li>
+    <li>Laundry</li>
+    <li>Study</li>
+    <li class="checked">Read a book</li>
+    <li>Go Gym</li>
+  </ul>
+</div>
+  <script src="script.js"></script>
+</body>
+
+</html>
