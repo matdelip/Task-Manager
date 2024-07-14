@@ -1,35 +1,30 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>My To-Do List</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<div class ="container">
-  <div id="myDIV" class="header">
-    <h2>My To-Do List</h2>
-    <input type="text" id="myInput" placeholder="Create New To-Do...">
-    <span onclick="newElement()" class="addBtn">Add to List</span>
-  </div>
-  
-  
-  <ul id="myList">
-    <li>Finish assignments</li>
+  <div class="container">
+    <div id="myDIV" class="header">
+      <h2>My Task Manager</h2>
+      <input type="text" id="myInput" placeholder="Enter New Task..">
+      <br>
+      <span onclick="newElement()" class="addTaskBtn">Add Task</span>
+    </div>
+
+    <ul id="myList">
+    <li>Buy Groceries</li>
     <li>Pay bills</li>
-    <li>Laundry</li>
-    <li>Study</li>
-    <li class="checked">Read a book</li>
+    <li>Clean</li>
+    <li>Water Plants</li>
+    <li>Read a book</li>
     <li>Go Gym</li>
   </ul>
-</div>
+  </div>
+
   <script src="script.js"></script>
 </body>
-
 </html>
